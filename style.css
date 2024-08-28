@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* margin-top: 0; */
+    font-weight: 300;
+}
+
+body {
+    color: rgb(13, 13, 23);
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* The about me part -----------------------------------------------------*/
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    line-height: 2;
+    padding: 30px;
+    background: rgb(179, 179, 222);
+}
+
+.aboutme {
+    border: 2px solid rgb(93, 125, 139);
+    border-radius: 20px;
+    width: 100vh;
+    padding: 20px;
+}
+
+.aboutme p {
+    text-indent: 50px;
+}
+
+.studentid {
+    align-self: center;
+}
+
+/* section 1 ----------------------------------------------------------- */
+
+.full {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.firsthalf {
+    background: #fffcf8;
+    padding-top: 67px;
+    width: 45%;
+    height: 100vh;
+}
+
+.image {
+    width: 100%;
+    height: 370px;
+}
+
+.halfimg {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.desc h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: .5px;
+}
+
+.linksnstuff {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.socials a {
+    color: rgb (3, 103, 242);
+}
+
+.copyrights {
+    font-size: .8rem;
+    line-height: 30px;
+    letter-spacing: .02rem;
+    color: 000812;
+}
+
+/* the form part --------------------------------------------------------*/
+
+.secondhalf {
+    height: 100vh;
+    width: 55%;
+    overflow-y: auto;
+}
+
+.altschool {
+    text-align: right;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.formcontent {
+    width: 100%;
+    min-height: 90vh;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.signupform {
+    border: 2px transparent;
+    width: 47rem;
+    margin: 17px;
+}
+
+.signupform h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin: 5px 30px;
+}
+
+.signupform h4 {
+    color: rgb(90, 93, 98);
+    line-height: 5px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+
+.formact {
+    margin-left: 30px;
+}
+
+.signupform label {
+    font-weight: 400;
+    margin: 10px;
+}
+
+.signupform input, select {
+    width: 250px;
+    height: 60%;
+    margin: 8px;
+    border: 1px solid transparent;
+    padding: 8px 12px 8px 5px;
+    border-radius: 6px;
+    background: rgb(224, 232, 235);
+}
+
+.formrow {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 5px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.formrow .channel select{
+    width: 115%;
+}
+
+.formact .terms-and-privacy {
+    width: 90%;
+    margin-left: 30px;
+}
+
+.formact .submit {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: white;
+    background-color: rgb(106, 111, 254);
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.submit input {
+    color: white;
+    background-color: rgb(106, 111, 254);
+    cursor: pointer;
+}
+
+.submit i {
+    position: absolute;
+    font-size: 20px;
+    left: 49%;
+    color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+    .secondhalf {
+        width: 100%;
+        padding: 0;
+}
+    body {
+        width: 100%;
+        margin: auto;
+    }
+    .formrow .channel select {
+        width: 90%;
+    }
+    .formact .submit {
+        width: 60%;
+        font-size: 0.8rem;
+    }
+    .signupform input, select {
+        height: 60%;
+    }
+}
+
+@media (max-width: 590px) {
+    .formrow {
+        gap: 0px;
+        grid-template-columns: 1fr;
+    }
+    .formrow .channel {
+        width: 60%;
+    }
+    
+}
+
+@media (max-width: 765px) {
+    .terms-and-privacy {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .firsthalf {
+    display: none;
+    }
+    .formcontent {
+        width: 100%;
+        padding: 0;
+    }
+    .altschool {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .formact .submit {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .desc h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .formcontent {
+        margin-top: 0;
+    }
+}
